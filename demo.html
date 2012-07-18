@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>dropSearch</title>
+<meta charset="utf-8" />
+<style>
+#search_input
+{
+  width: 140px;
+  padding: 5px;
+}
+#drop_down_list
+{
+  width: 150px;
+  height: 100px;
+  padding: 5px;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="dropSearch.js"></script>
+<script>
+$(document).ready(function(){
+	$('#search_input').dropSearch('#drop_down_list');
+});
+</script>
+<body>
+  <form action="?">
+    <p><input id="search_input" type="text" autocomplete="off" name="search" /></p>
+    <select id="drop_down_list" name="options" size="10">
+      <option value="1">Text</option>
+      <option value="2">Text 1</option>
+      <option value="3">String</option>
+    </select>
+  </form>
+</body>
+</head>
+</html>
